@@ -6,7 +6,10 @@
     "lerna": "^4.0.0"
   },
   "scripts": {
-    "start": "lerna exec --scope @workspace/app -- yarn start"
+    "start": "lerna exec --scope @workspace/app -- yarn start",
+    "test": "lerna run test --since",
+    "new-version": "lerna version --conventional-commits --yes",
+    "diff": "lerna diff"
   },
   "workspaces": {
     "packages": [
