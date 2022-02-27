@@ -1,9 +1,19 @@
 {
   "name": "@workspace/root",
   "private": true,
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "@emotion/css": "^11.1.3",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0"
+  },
   "devDependencies": {
     "craco": "^0.0.3",
-    "lerna": "^4.0.0"
+    "lerna": "^4.0.0",
+
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.09"
   },
   "scripts": {
     "start": "lerna exec --scope @workspace/app -- yarn start",

@@ -1,15 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Button from "./components/Button";
+
+import { Button } from "./components/Button";
 import reportWebVitals from './reportWebVitals';
 
-function App () {
-    return (
-        <Button
-            onClick={() => {
-                console.log('clicked')
-            }}
-        />
+function App() {
+  return (
+        // <Button
+        //     onClick={() => {
+        //         console.log('clicked')
+        //     }}
+        // />
+        <div>
+          123
+        </div>
     )
 }
 
@@ -27,4 +31,4 @@ reportWebVitals();
 
 
 
-export  { Button };
+export { Button };

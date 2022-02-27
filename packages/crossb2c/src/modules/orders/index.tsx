@@ -4,7 +4,6 @@ import React from 'react'
 import { FormattedMessage } from 'react-intl'
 import { useQuery } from 'react-query'
 
-import { Button } from '@workspace/components'
 import { H1 } from 'kit/typography'
 import { Error } from 'kit/error'
 import { Spinner } from 'kit/spinner'
@@ -56,12 +55,6 @@ function OrdersModule() {
     return (
         <Frame>
             <CenteredBlock>
-                <Button
-                    onClick={() => {
-                        console.log("asdsd")
-                    }}
-                />
-
                 <Title>
                     <H1>
                         <FormattedMessage id='app.shipments.myShipments' />
