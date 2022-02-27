@@ -9,13 +9,13 @@
     "start": "lerna exec --scope @workspace/app -- yarn start",
     "c-start": "lerna exec --scope @workspace/components -- yarn start",
     "crossb2c-start": "lerna exec --scope @workspace/crossb2c -- yarn start",
-    "app-build": "lerna exec --scope @workspace/app -- yarn build",
+    "crossb2c-build": "lerna exec --scope @workspace/crossb2c -- yarn build",
     "test": "lerna run test --since",
     "new-version": "lerna version --conventional-commits --yes",
     "diff": "lerna diff",
 
 
-    "bootstrap": "lerna run --scope @workspace/app --scope @workspace/app yarn"
+    "bootstrap": "lerna bootstrap"
   },
   "workspaces": {
     "packages": [
