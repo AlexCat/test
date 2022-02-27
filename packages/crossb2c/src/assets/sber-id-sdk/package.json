@@ -1,0 +1,6 @@
+{
+  "name": "sber-id-sdk",
+  "version": "2.3.2",
+  "private": true,
+  "main": "./sberid-sdk.min.js"
+}

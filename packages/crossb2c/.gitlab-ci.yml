@@ -1,0 +1,25 @@
+stages:
+  - build
+
+variables:
+    MAJOR_VERSION: "1"
+    # NAMESPACE: "bpmn"
+    GIT_SUBMODULE_STRATEGY: recursive
+    MINOR_VERSION: $CI_PIPELINE_IID
+build_images:
+  stage: build
+  # image: registry.tp.sblogistica.ru/gitlab/images/builder-node:10
+  tags:
+    - docker
+  services:
+    - docker:dind
+  script:
+    - export REGISTRY_IMAGE=$CI_REGISTRY_IMAGE:$MAJOR_VERSION.$MINOR_VERSION
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $REGISTRY
+    - docker build -t $REGISTRY_IMAGE .
+    - docker push $REGISTRY_IMAGE
+    - docker rmi $REGISTRY_IMAGE
+    - echo $REGISTRY_IMAGE
+  only:
+    - master
+  when: manual

@@ -9,7 +9,8 @@ const Button: React.FC<Props> = (props) => {
     <button
       {...props}
       style={{
-        color: 'red'
+        color: 'green',
+        width: 400
       }}
     >
       Click ME PLEASE

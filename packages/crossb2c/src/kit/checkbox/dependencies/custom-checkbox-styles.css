@@ -1,0 +1,34 @@
+.custom-checkbox [data-reach-custom-checkbox-container] {
+	width: 16px;
+	height: 16px;
+	border-radius: 4px;
+	border: 1px solid #BEC3CC;
+	background-color: #FFF;
+	cursor: pointer;
+	margin: 0;
+}
+.custom-checkbox [data-reach-custom-checkbox-container][data-state="checked"] {
+	background-color: #21a038;
+	border-color: #21a038;
+	transition: background-color 20ms linear, border-color 200ms linear;
+}
+.custom-checkbox [data-reach-custom-checkbox-container][data-state="unchecked"] {
+	transition: background-color 200ms linear, border-color 200ms linear;
+	border-color: #BEC3CC;
+	background-color: #FFF;
+}
+.custom-checkbox [data-reach-custom-checkbox-container][data-state="mixed"] {
+	background-color: #21a038;
+	border-color: #21a038;
+	transition: background-color 200ms linear, border-color 200ms linear;
+}
+.custom-checkbox [data-reach-custom-checkbox-container]:focus-within, .custom-checkbox [data-reach-custom-checkbox-container][data-focus] {
+    box-shadow: none;
+    outline: none;
+}
+.custom-checkbox [data-reach-custom-checkbox-container][data-state="checked"]:hover {
+    filter: brightness(90%);
+}
+.custom-checkbox [data-reach-custom-checkbox-container][data-state="unchecked"]:hover {
+    filter: brightness(95%);
+}

@@ -8,6 +8,7 @@
   "scripts": {
     "start": "lerna exec --scope @workspace/app -- yarn start",
     "c-start": "lerna exec --scope @workspace/components -- yarn start",
+    "crossb2c-start": "lerna exec --scope @workspace/crossb2c -- yarn start",
     "app-build": "lerna exec --scope @workspace/app -- yarn build",
     "test": "lerna run test --since",
     "new-version": "lerna version --conventional-commits --yes",
