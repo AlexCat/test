@@ -5,7 +5,16 @@ interface Props {
 }
 
 const Button: React.FC<Props> = (props) => {
-  return <button {...props}>Click ME PLEASE</button>;
+  return (
+    <button
+      {...props}
+      style={{
+        color: 'red'
+      }}
+    >
+      Click ME PLEASE
+    </button>
+  )
 };
 
 export default Button;
